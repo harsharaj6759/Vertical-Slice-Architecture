@@ -6,7 +6,7 @@ This project was created to learn vertical slice architecture using a Financial 
 
 ## Tech Stack
 
-- **Framework**: ASP.NET Core 9.0
+- **Framework**: ASP.NET Core 10.0
 - **Database**: SQLite
 - **ORM**: Entity Framework Core
 - **Patterns**: MediatR (CQRS pattern)
@@ -73,7 +73,7 @@ FinancialTracker/
 
 ## How to Run
 
-1. Ensure you have .NET 9.0 SDK installed
+1. Ensure you have .NET 10.0 SDK installed
 2. Navigate to the `FinancialTracker` directory
 3. Restore dependencies:
    ```bash
