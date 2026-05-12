@@ -38,7 +38,7 @@ FinancialTracker/
 ## Features
 
 ### 1. Create Expense
-- **Endpoint**: `POST /expenses`
+- **Endpoint**: `POST /api/expense`
 - **Description**: Create a new expense entry with the following details:
   - **Name**: Expense name/description
   - **Category**: Category of the expense (Grocery, Meat, Misc, Eating_out)
