@@ -6,6 +6,7 @@ namespace FinancialTracker.Domain
         public string Name { get; set; } = "Expense Name";
         public ExpenseCategory Category { get; set; } = ExpenseCategory.None;
         public double Amount { get; set; }
+        public bool IsDeleted { get; set; } = false;
 
     }
 

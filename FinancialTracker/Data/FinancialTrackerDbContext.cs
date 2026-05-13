@@ -11,5 +11,13 @@ namespace FinancialTracker.Data
         }
 
         public DbSet<Expense> Expenses { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Global query filter for soft deletes
+            modelBuilder.Entity<Expense>().HasQueryFilter(e => !e.IsDeleted);
+        }
     }
 }

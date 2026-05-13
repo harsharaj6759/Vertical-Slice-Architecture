@@ -1,7 +1,10 @@
 
-
 using FinancialTracker.Data;
 using FinancialTracker.Features.Expense.CreateExpense;
+using FinancialTracker.Features.Expense.GetExpenseById;
+using FinancialTracker.Features.Expense.ListExpenses;
+using FinancialTracker.Features.Expense.UpdateExpense;
+using FinancialTracker.Features.Expense.DeleteExpense;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +32,10 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MapCreateExpenseEndpoint();
+app.MapGetExpenseByIdEndpoint();
+app.MapListExpensesEndpoint();
+app.MapUpdateExpenseEndpoint();
+app.MapDeleteExpenseEndpoint();
 
 app.Run();
 
